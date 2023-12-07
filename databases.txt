@@ -1,0 +1,23 @@
+create database aviacao character latin1;
+
+use aviacao;
+
+create table aeroporto(
+		id int AUTO_INCREMENT,
+		nome varchar (100),
+		cidade varchar(30),
+		sigla varchar(3),
+		inauguracao date,
+		portoes int,
+		primary key (id)
+		);
+
+create table pilotos(
+		id int AUTO_INCREMENT,
+		nome varchar (100),
+		cpf varchar(11),
+		telefone varchar(11),
+		admissao date,
+		horasDeVoo int,
+		primary key (id)
+		);
